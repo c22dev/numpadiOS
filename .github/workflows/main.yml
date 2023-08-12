@@ -1,4 +1,4 @@
-name: Numpad
+name: numpad
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Numpad
+    name: numpad
     runs-on: macos-12
 
     steps:
@@ -19,6 +19,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Numpad - Extract it
+          name: numpad - Extract it
           path: |
-            /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/Numpad.ipa
+            /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/numpad.ipa
