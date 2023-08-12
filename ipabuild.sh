@@ -5,7 +5,7 @@ set -e
 cd "$(dirname "$0")"
 
 WORKING_LOCATION="$(pwd)"
-APPLICATION_NAME=Numpad
+APPLICATION_NAME=numpad
 CONFIGURATION=Debug
 
 if [ ! -d "build" ]; then
@@ -14,12 +14,12 @@ fi
 
 cd build
 
-if [ -e "Numpad.ipa" ]; then
-rm Numpad.ipa
+if [ -e "numpad.ipa" ]; then
+rm numpad.ipa
 fi
 
 xcodebuild -project "$WORKING_LOCATION/$APPLICATION_NAME.xcodeproj" \
-    -scheme Numpad \
+    -scheme numpad \
     -configuration Debug \
     -derivedDataPath "$WORKING_LOCATION/build/DerivedData" \
     -destination 'generic/platform=iOS' \
@@ -34,7 +34,7 @@ cp -r "$DD_APP_PATH" "$TARGET_APP"
 rm -rf Payload
 mkdir Payload
 cp -r $APPLICATION_NAME.app Payload/$APPLICATION_NAME.app
-zip -vr Numpad.ipa Payload
+zip -vr numpad.ipa Payload
 
 
 codesign --remove "$TARGET_APP"
