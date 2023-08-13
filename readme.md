@@ -26,3 +26,5 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 # Credits
 
 Huge thanks to [c22dev](https://github.com/c22dev) for helping me create this application.
+
+[duraidabdul](https://github.com/duraidabdul) For [LocalConsole](https://github.com/duraidabdul/LocalConsole).
