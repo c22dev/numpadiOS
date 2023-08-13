@@ -11,35 +11,6 @@ import LocalConsole
 
 import Foundation
 
-var ip = null + ":3000"
-
-var url = URL(string: ip)!
-var request = URLRequest(url: url)
-request.httpMethod = "POST"
-request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-let data: [String: Any] = ["value": 1]
-do {
-    let jsonData = try JSONSerialization.data(withJSONObject: data, options: [])
-    request.httpBody = jsonData
-} catch {
-    print("Error creating JSON data: \(error)")
-}
-
-let task = URLSession.shared.dataTask(with: request) { data, response, error in
-    if let error = error {
-        print("Error: \(error)")
-        return
-    }
-    
-    if let data = data {
-        if let jsonString = String(data: data, encoding: .utf8) {
-            print("Response: \(jsonString)")
-        }
-    }
-}
-
-task.resume()
 
 let consoleManager = LCManager.shared
 
@@ -61,6 +32,34 @@ class HapticManager {
 
 
 struct ContentView: View {
+    @State var ip: String = ""
+    func apiCall() {
+        guard let url = URL(string: ip) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let body: [String: AnyHashable] = [
+            "body": ip
+        ]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        
+        let task = URLSession.shared.dataTask(with: request) {data, _, error in
+            guard let data = data,error == nil else {
+                return
+            }
+            do {
+                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            }
+            catch {
+                consoleManager.print(error)
+            }
+        }
+        task.resume()
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -70,6 +69,7 @@ struct ContentView: View {
             HStack {
                 Button("1") {
                     consoleManager.print("Hello, World! :D 1 ")
+                    apiCall()
                     consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
