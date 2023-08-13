@@ -38,7 +38,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
-                .foreground(.black)
+                .foreground(Color.black)
                 
                 Button("2") {
                     print("pressed 2")
