@@ -45,7 +45,8 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("2") {
-                    print("pressed 2")
+                    consoleManager.print("Hello, World! :D 2 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -54,7 +55,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 
                 Button("3") {
-                    print("pressed 3")
+                    consoleManager.print("Hello, World! :D 3 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -66,7 +68,8 @@ struct ContentView: View {
             HStack {
                 
                 Button("4") {
-                    print("pressed 4")
+                    consoleManager.print("Hello, World! :D 4 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -75,7 +78,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 
                 Button("5") {
-                    print("pressed 5")
+                    consoleManager.print("Hello, World! :D 5 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -84,7 +88,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 
                 Button("6") {
-                    print("pressed 6")
+                    consoleManager.print("Hello, World! :D 6 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -96,7 +101,8 @@ struct ContentView: View {
             HStack {
                 
                 Button("7") {
-                    print("pressed 7")
+                     consoleManager.print("Hello, World! :D 7 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -105,7 +111,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 
                 Button("8") {
-                    print("pressed 8")
+                    consoleManager.print("Hello, World! :D 8 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
@@ -114,7 +121,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 
                 Button("9") {
-                    print("pressed 9")
+                    consoleManager.print("Hello, World! :D 9 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
