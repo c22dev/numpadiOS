@@ -11,6 +11,7 @@
 		F83DFE9C2A8800BE00F9BE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DFE9B2A8800BE00F9BE82 /* ContentView.swift */; };
 		F83DFE9E2A8800CE00F9BE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83DFE9D2A8800CE00F9BE82 /* Assets.xcassets */; };
 		F83DFEA12A8800CE00F9BE82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83DFEA02A8800CE00F9BE82 /* Preview Assets.xcassets */; };
+		F86D08542A88CDBC00C65416 /* LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = F86D08532A88CDBC00C65416 /* LocalConsole */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86D08542A88CDBC00C65416 /* LocalConsole in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = numpad;
+			packageProductDependencies = (
+				F86D08532A88CDBC00C65416 /* LocalConsole */,
+			);
 			productName = numpad;
 			productReference = F83DFE962A8800BE00F9BE82 /* numpad.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F83DFE8D2A8800BD00F9BE82;
+			packageReferences = (
+				F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */,
+			);
 			productRefGroup = F83DFE972A8800BE00F9BE82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diyar2137237243/LocalConsole";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F86D08532A88CDBC00C65416 /* LocalConsole */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */;
+			productName = LocalConsole;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F83DFE8E2A8800BD00F9BE82 /* Project object */;
 }

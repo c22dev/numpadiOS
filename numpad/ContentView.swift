@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+import LocalConsole
+
+let consoleManager = LCManager.shared
+
 class HapticManager {
     
     static let instance = HapticManager()
@@ -29,7 +33,8 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button("1") {
-                    print("pressed 1")
+                    consoleManager.print("Hello, World! :D 1 ")
+                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
