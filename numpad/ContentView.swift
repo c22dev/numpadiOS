@@ -9,6 +9,38 @@ import SwiftUI
 
 import LocalConsole
 
+import Foundation
+
+var ip = null + ":3000"
+
+var url = URL(string: ip)!
+var request = URLRequest(url: url)
+request.httpMethod = "POST"
+request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+let data: [String: Any] = ["value": 1]
+do {
+    let jsonData = try JSONSerialization.data(withJSONObject: data, options: [])
+    request.httpBody = jsonData
+} catch {
+    print("Error creating JSON data: \(error)")
+}
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in
+    if let error = error {
+        print("Error: \(error)")
+        return
+    }
+    
+    if let data = data {
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print("Response: \(jsonString)")
+        }
+    }
+}
+
+task.resume()
+
 let consoleManager = LCManager.shared
 
 class HapticManager {
@@ -31,6 +63,10 @@ class HapticManager {
 struct ContentView: View {
     var body: some View {
         VStack {
+            HStack {
+
+            }
+
             HStack {
                 Button("1") {
                     consoleManager.print("Hello, World! :D 1 ")
