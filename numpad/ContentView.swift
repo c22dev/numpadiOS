@@ -64,7 +64,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-
+                TextField("IP", text: $ip)
             }
 
             HStack {
