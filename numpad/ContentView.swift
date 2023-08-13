@@ -53,6 +53,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
                 
                 Button("3") {
                     consoleManager.print("Hello, World! :D 3 ")
@@ -63,6 +65,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
             }
                 
             HStack {
@@ -76,6 +80,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
                 
                 Button("5") {
                     consoleManager.print("Hello, World! :D 5 ")
@@ -86,6 +92,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
                 
                 Button("6") {
                     consoleManager.print("Hello, World! :D 6 ")
@@ -96,6 +104,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
             }
                 
             HStack {
@@ -109,6 +119,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
                 
                 Button("8") {
                     consoleManager.print("Hello, World! :D 8 ")
@@ -119,6 +131,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
                 
                 Button("9") {
                     consoleManager.print("Hello, World! :D 9 ")
@@ -129,6 +143,8 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
             }
         }
     }
