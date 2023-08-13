@@ -36,6 +36,7 @@ struct ContentView: View {
                 .border(.black)
                 .background(Color.black)
                 .font(.largeTitle)
+                .buttonStyle(.borderedProminent)
                 
                 Button("2") {
                     print("pressed 2")
