@@ -7,12 +7,30 @@
 
 import SwiftUI
 
+class HapticManager {
+    
+    static let instance = HapticManager()
+
+    func notification(type: UINotificationFeedbackGenerator.FeedbackType) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.impactOccurrued()
+    }
+
+    func impact(style: UIImpactFeedbackGenerator.FeedbackType) {
+        let generator UIImpactFeedbackGenerator(style: style)
+        generator.impactOccurrued()
+    }
+
+}
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
                 Button("1") {
                     print("pressed 1")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -21,6 +39,7 @@ struct ContentView: View {
                 
                 Button("2") {
                     print("pressed 2")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -29,6 +48,7 @@ struct ContentView: View {
                 
                 Button("3") {
                     print("pressed 3")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -40,6 +60,7 @@ struct ContentView: View {
                 
                 Button("4") {
                     print("pressed 4")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -48,6 +69,7 @@ struct ContentView: View {
                 
                 Button("5") {
                     print("pressed 5")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -56,6 +78,7 @@ struct ContentView: View {
                 
                 Button("6") {
                     print("pressed 6")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -67,6 +90,7 @@ struct ContentView: View {
                 
                 Button("7") {
                     print("pressed 7")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -75,6 +99,7 @@ struct ContentView: View {
                 
                 Button("8") {
                     print("pressed 8")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
@@ -83,6 +108,7 @@ struct ContentView: View {
                 
                 Button("9") {
                     print("pressed 9")
+                    HapticManager.instance.impact(style: .soft)
                 }
                 .frame(width: 100, height: 100)
                 .border(.black)
