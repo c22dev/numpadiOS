@@ -7,19 +7,19 @@ An application that allows you to use your iPhone as a numpad for a computer!
 
 I made this iOS application because I needed an *ad-free* iPhone numpad that would allow me to use my iPhone as a numpad for my computer.
 
-# FAQ
+# Q&A
 
-How does it work?
+**Q : How will it work?**
 
-It is planned to function via USB.
+*A : It is planned to work over USB.*
 
-Does it work on MAC?
+**Q : Does it work with macOS or Linux ?**
 
-No, maybe in the future.
+*A : Not yet.*
 
-Will it be on the appstore?
+**Q : Will it be available on the App Store ?**
 
-Yes, it will be a free application.
+*A : Yes, it will be as a free app.*
 
 
 
