@@ -21,7 +21,13 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 
 *A : Yes, it will be as a free app.*
 
-
+# Running server
+```
+git clone https://github.com/diyar2137237243/numpad
+cd numpad
+npm install express robotjs qrcode
+node server.js
+``
 
 # Credits
 
