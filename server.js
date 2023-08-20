@@ -33,6 +33,7 @@ app.post('/touch', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server/PC is listening on port ${port}`);
+    console.log(`IP for manual input : ${localIPv4Address}`);
     qrcode.toString(localIPv4Address, { type: 'terminal' }, (err, qrCode) => {
             if (err) {
                 console.error('Error generating QR code:', err);
