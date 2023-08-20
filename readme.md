@@ -1,8 +1,6 @@
 # numpadiOS
 An application that allows you to use your iPhone as a numpad for a computer!
 
-**Currently a WIP**
-
 # Why?
 
 I made this iOS application because I needed an *ad-free* iPhone numpad that would allow me to use my iPhone as a numpad for my computer.
