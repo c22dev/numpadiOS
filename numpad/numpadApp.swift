@@ -95,6 +95,7 @@ struct numpadApp: App {
                     .interactiveDismissDisabled(true)
                 }
                 .sheet(isPresented: $firsTime) {
+                    // credit to haxi0 for his setup view
                     NavigationView {
                         List {
                             Section(header: Text("Welcome!")) {
