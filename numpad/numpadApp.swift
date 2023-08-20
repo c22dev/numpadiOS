@@ -130,7 +130,7 @@ struct numpadApp: App {
                             Section(header: Text("Step 3")) {
                                 Text("Install dependencies by running this exact command.")
                                 VStack {
-                                    Text("npm install express robotjs qrcode node-pty")
+                                    Text("npm install express robotjs qrcode node-pty iface")
                                         .font(.custom("Menlo", size: 15))
                                         .foregroundColor(.white)
                                         .padding()
