@@ -28,6 +28,7 @@ struct numpadApp: App {
                     if hasLaunchedBefore == true {
                         qrScannerSheet.toggle()
                     }
+                    UIApplication.shared.isIdleTimerDisabled = true
                 }
                 .sheet(isPresented: $qrScannerSheet) {
                     VStack {
