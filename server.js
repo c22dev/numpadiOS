@@ -20,13 +20,7 @@ for (const k in interfaces) {
     }
 }
 
-const localIPv4Address = addresses[0];
-for (const iface of ipv4Interfaces) {
-    if (iface.family === 'IPv4' && !iface.internal) {
-        localIPv4Address = iface.address;
-        break;
-    }
-}
+const localIPv4Address = addresses[0]; // I SET THE FUCKING VARIABLE UP HERE !!!!!!!!
 
 app.use(express.json());
 
