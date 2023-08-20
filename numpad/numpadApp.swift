@@ -2,7 +2,8 @@
 //  numpadApp.swift
 //  numpad
 //
-//  Created by deez nuts enjoyer on 12.08.23.
+//  Created by diyara3 on 12.08.23.
+//  First edit by Constantin Clerc on 20.08.23.
 //
 
 import SwiftUI
