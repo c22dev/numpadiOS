@@ -25,7 +25,7 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 ```
 git clone https://github.com/diyar2137237243/numpad
 cd numpad
-npm install express robotjs qrcode
+npm install express robotjs qrcode node-pty
 node server.js
 ```
 

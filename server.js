@@ -1,5 +1,6 @@
 const express = require('express');
 const robot = require('robotjs');
+const qrcode = require('qrcode');
 const os = require('os');
 
 const app = express();
@@ -32,6 +33,12 @@ app.post('/touch', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server/PC is listening on port ${port}`);
-    console.log(`Please input ${localIPv4Address} in IP field.`);
+    qrcode.toString(localIPv4Address, { type: 'terminal' }, (err, qrCode) => {
+            if (err) {
+                console.error('Error generating QR code:', err);
+            } else {
+                console.log(qrCode);
+            }
+        });
 });
 

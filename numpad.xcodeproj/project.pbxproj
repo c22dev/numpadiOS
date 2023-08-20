@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7948B53F2A91DAF70040756F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 7948B53E2A91DAF70040756F /* CodeScanner */; };
 		79563B072A91C78F00C8A81A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79563B062A91C78F00C8A81A /* Extensions.swift */; };
 		F83DFE9A2A8800BE00F9BE82 /* numpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DFE992A8800BE00F9BE82 /* numpadApp.swift */; };
 		F83DFE9C2A8800BE00F9BE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DFE9B2A8800BE00F9BE82 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7948B5402A91DCE80040756F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		79563B062A91C78F00C8A81A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F83DFE962A8800BE00F9BE82 /* numpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83DFE992A8800BE00F9BE82 /* numpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numpadApp.swift; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7948B53F2A91DAF70040756F /* CodeScanner in Frameworks */,
 				F86D08542A88CDBC00C65416 /* LocalConsole in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +58,7 @@
 		F83DFE982A8800BE00F9BE82 /* numpad */ = {
 			isa = PBXGroup;
 			children = (
+				7948B5402A91DCE80040756F /* Info.plist */,
 				F83DFE992A8800BE00F9BE82 /* numpadApp.swift */,
 				F83DFE9B2A8800BE00F9BE82 /* ContentView.swift */,
 				79563B062A91C78F00C8A81A /* Extensions.swift */,
@@ -90,6 +94,7 @@
 			name = numpad;
 			packageProductDependencies = (
 				F86D08532A88CDBC00C65416 /* LocalConsole */,
+				7948B53E2A91DAF70040756F /* CodeScanner */,
 			);
 			productName = numpad;
 			productReference = F83DFE962A8800BE00F9BE82 /* numpad.app */;
@@ -121,6 +126,7 @@
 			mainGroup = F83DFE8D2A8800BD00F9BE82;
 			packageReferences = (
 				F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */,
+				7948B53D2A91DAF70040756F /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = F83DFE972A8800BE00F9BE82 /* Products */;
 			projectDirPath = "";
@@ -282,8 +288,10 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = numpad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Numpad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,8 +322,10 @@
 				DEVELOPMENT_TEAM = 7G89J82G2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = numpad/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Numpad;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +369,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7948B53D2A91DAF70040756F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.3;
+			};
+		};
 		F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/diyar2137237243/LocalConsole";
@@ -370,6 +388,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7948B53E2A91DAF70040756F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7948B53D2A91DAF70040756F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		F86D08532A88CDBC00C65416 /* LocalConsole */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F86D08522A88CDBC00C65416 /* XCRemoteSwiftPackageReference "LocalConsole" */;

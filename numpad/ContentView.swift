@@ -10,16 +10,9 @@ import SwiftUI
 import LocalConsole
 import Foundation
 
-let consoleManager = LCManager.shared
-
 struct ContentView: View {
-    @State var ip: String = ""
     var body: some View {
         VStack {
-            HStack {
-                TextField("IP", text: $ip)
-            }
-
             HStack {
                 Button("1") {
                     consoleManager.print("User pressed touch 1 ")

@@ -7,12 +7,29 @@
 //
 
 import SwiftUI
+import CodeScanner
+import LocalConsole
+
+let consoleManager = LCManager.shared
+var ip: String = ""
 
 @main
 struct numpadApp: App {
+    @State private var qrScannerSheet = false
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear{
+                    qrScannerSheet.toggle()
+                }
+                .sheet(isPresented: $qrScannerSheet) {
+                    CodeScannerView(codeTypes: [.qr]) { response in
+                        if case let .success(result) = response {
+                            ip = result.string
+                            qrScannerSheet = false
+                        }
+                    }
+                }
         }
     }
 }
