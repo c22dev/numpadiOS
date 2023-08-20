@@ -7,8 +7,20 @@ const app = express();
 const port = 3000;
 const networkInterfaces = os.networkInterfaces();
 const ipv4Interfaces = networkInterfaces['en0'] || networkInterfaces['eth0'] || networkInterfaces['wlan0'] || [];
-let localIPv4Address = null;
 
+
+const interfaces = os.networkInterfaces();
+const addresses = [];
+for (const k in interfaces) {
+    for (const k2 in interfaces[k]) {
+        const address = interfaces[k][k2];
+        if (address.family === 'IPv4' && !address.internal) {
+            addresses.push(address.address);
+        }
+    }
+}
+
+const localIPv4Address = addresses[0];
 for (const iface of ipv4Interfaces) {
     if (iface.family === 'IPv4' && !iface.internal) {
         localIPv4Address = iface.address;
