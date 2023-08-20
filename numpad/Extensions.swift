@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-import LocalConsole
+
 
 class HapticManager {
     static let instance = HapticManager()
