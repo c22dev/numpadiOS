@@ -32,12 +32,22 @@ app.use(express.json());
 
 app.post('/touch', (req, res) => {
     const intValue = req.body.intValue;
-    if (intValue >= 0 && intValue <= 9) {
-        robot.keyTap('numpad_' + intValue);
-    } else if (intValue === 11) {
-        robot.keyTap('.');
+    if (os.platform() === 'linux') {
+        if (intValue >= 0 && intValue <= 9) {
+            robot.keyTap(intValue);
+        } else if (intValue === 11) {
+            robot.keyTap('.');
+        } else {
+            console.log('Invalid input value');
+        }
     } else {
-        console.log('Invalid input value');
+        if (intValue >= 0 && intValue <= 9) {
+            robot.keyTap('numpad_' + intValue);
+        } else if (intValue === 11) {
+            robot.keyTap('.');
+        } else {
+            console.log('Invalid input value');
+        }
     }
 
     res.sendStatus(200);
