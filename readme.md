@@ -11,7 +11,7 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 
 **Q : How does it work?**
 
-*A : It works with LAN and node.JS. Make sure your computer and your phone are connected on the same network.*
+*A : It works with LAN and node.JS. Make sure your computer and your phone are connected on the same network. Please also follow in-app setup instrinctions*
 
 **Q : Does it work with macOS or Linux ?**
 
