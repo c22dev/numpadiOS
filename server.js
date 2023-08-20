@@ -20,7 +20,7 @@ for (const k in interfaces) {
     }
 }
 
-const localIPv4Address = addresses[0]; // I SET THE FUCKING VARIABLE UP HERE !!!!!!!!
+const localIPv4Address = addresses[0];
 
 app.use(express.json());
 
