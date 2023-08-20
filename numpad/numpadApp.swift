@@ -27,8 +27,6 @@ struct numpadApp: App {
                     if !hasLaunchedBefore {
                         firsTime.toggle()
                     }
-                    while hasLaunchedBefore == true {
-                    }
                     if hasLaunchedBefore == true {
                         qrScannerSheet.toggle()
                     }
