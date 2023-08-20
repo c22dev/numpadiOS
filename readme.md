@@ -9,13 +9,13 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 
 # Q&A
 
-**Q : How will it work?**
+**Q : How does it work?**
 
-*A : It is planned to work over USB.*
+*A : It works with LAN and node.JS. Make sure your computer and your phone are connected on the same network.*
 
 **Q : Does it work with macOS or Linux ?**
 
-*A : Not yet.*
+*A : Yes ! Windows, macOS and Linux are supported ! (Note : It might not work properly on every linux distro)*
 
 **Q : Will it be available on the App Store ?**
 
