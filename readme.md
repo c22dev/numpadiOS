@@ -27,7 +27,7 @@ git clone https://github.com/diyar2137237243/numpad
 cd numpad
 npm install express robotjs qrcode
 node server.js
-``
+```
 
 # Credits
 
