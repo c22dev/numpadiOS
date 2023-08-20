@@ -31,6 +31,6 @@ node server.js
 
 # Credits
 
-Huge thanks to [c22dev](https://github.com/c22dev) for helping me create this application.
+[c22dev](https://github.com/c22dev) - Back-end, Setup, Server, QR code/IP (UI for those two)
 
-[duraidabdul](https://github.com/duraidabdul) For [LocalConsole](https://github.com/duraidabdul/LocalConsole).
+[twostraws](https://github.com/twostraws/) - [CodeScanner](twostraws)

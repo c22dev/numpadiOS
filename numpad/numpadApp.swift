@@ -8,9 +8,7 @@
 
 import SwiftUI
 import CodeScanner
-import LocalConsole
 
-let consoleManager = LCManager.shared
 var ip: String = ""
 
 @main

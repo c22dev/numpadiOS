@@ -8,15 +8,6 @@
         "revision" : "bf5d7087015620b250ee6c865b3c9039fc159d1a",
         "version" : "2.3.3"
       }
-    },
-    {
-      "identity" : "localconsole",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/diyar2137237243/LocalConsole",
-      "state" : {
-        "branch" : "main",
-        "revision" : "2c5d5e018acd4963fe6dfe858f6d6fecef7cbf2f"
-      }
     }
   ],
   "version" : 2

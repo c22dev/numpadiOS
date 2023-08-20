@@ -15,8 +15,6 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button("1") {
-                    consoleManager.print("User pressed touch 1 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 1, ipAddress: ip)
                 }
@@ -28,8 +26,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("2") {
-                    consoleManager.print("User pressed touch 2 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 2, ipAddress: ip)
                 }
@@ -41,8 +37,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("3") {
-                    consoleManager.print("User pressed touch 3 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 3, ipAddress: ip)
                 }
@@ -57,8 +51,6 @@ struct ContentView: View {
             HStack {
                 
                 Button("4") {
-                    consoleManager.print("User pressed touch 4 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 4, ipAddress: ip)
                 }
@@ -71,7 +63,6 @@ struct ContentView: View {
                 
                 Button("5") {
                     consoleManager.print("User pressed touch 5 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 5, ipAddress: ip)
                 }
@@ -83,8 +74,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("6") {
-                    consoleManager.print("User pressed touch 6 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 6, ipAddress: ip)
                 }
@@ -99,8 +88,6 @@ struct ContentView: View {
             HStack {
                 
                 Button("7") {
-                     consoleManager.print("User pressed touch 7 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 7, ipAddress: ip)
                 }
@@ -112,8 +99,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("8") {
-                    consoleManager.print("User pressed touch 8 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 8, ipAddress: ip)
                 }
@@ -125,8 +110,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("9") {
-                    consoleManager.print("User pressed touch 9 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 9, ipAddress: ip)
                 }
@@ -139,8 +122,6 @@ struct ContentView: View {
             }
             HStack {
                 Button("0") {
-                    consoleManager.print("User pressed touch 0 ")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 0, ipAddress: ip)
                 }
@@ -151,8 +132,6 @@ struct ContentView: View {
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
                 Button(".") {
-                    consoleManager.print("User pressed touch .")
-                    consoleManager.isVisible = true
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 11, ipAddress: ip)
                 }
