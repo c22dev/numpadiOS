@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import LocalConsole
+
 import Foundation
 
 struct ContentView: View {
