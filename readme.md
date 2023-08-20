@@ -1,11 +1,11 @@
 # numpadiOS
 An application that allows you to use your iPhone as a numpad for a computer!
 
-# Why?
+## Why?
 
 I made this iOS application because I needed an *ad-free* iPhone numpad that would allow me to use my iPhone as a numpad for my computer.
 
-# Q&A
+## Q&A
 
 **Q : How does it work?**
 
@@ -19,7 +19,7 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 
 *A : Yes, it will be as a free app.*
 
-# Running server
+## Running server
 ```
 git clone https://github.com/diyar2137237243/numpad
 cd numpad
@@ -27,7 +27,7 @@ npm install express robotjs qrcode node-pty iface
 node server.js
 ```
 
-# Credits
+## Credits
 
 [c22dev](https://github.com/c22dev) - Back-end, Setup, Server, QR code/IP (UI for those two)
 
