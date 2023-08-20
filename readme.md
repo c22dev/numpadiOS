@@ -1,5 +1,5 @@
 # numpadiOS
-An application that allows you to use your iPhone as a numpad for a computer!
+An application that allows you to use your iPhone as a numpad for a computer! Once configured, a simple QR code scan and you're good to go !
 
 ## Why?
 
