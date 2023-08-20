@@ -62,7 +62,6 @@ struct ContentView: View {
                 .controlSize(.large)
                 
                 Button("5") {
-                    consoleManager.print("User pressed touch 5 ")
                     HapticManager.instance.impact(style: .soft)
                     sendNumToServ(intValue: 5, ipAddress: ip)
                 }
