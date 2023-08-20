@@ -97,7 +97,7 @@ struct numpadApp: App {
                     NavigationView {
                         List {
                             Section(header: Text("Welcome!")) {
-                                Text("Numpad is an app made by diyara3 (numpad touches) and c22dev (back-end, setup, qr-code, server) that allows you to use your phone as a numpad on your computer. Please note this doesn't work on Linux right now due to a node module limitation.")
+                                Text("Numpad is an app made by diyara3 (numpad touches) and c22dev (back-end, setup, qr-code, server) that allows you to use your phone as a numpad on your computer.")
                             }
                             
                             Section(header: Text("Step 1")) {
