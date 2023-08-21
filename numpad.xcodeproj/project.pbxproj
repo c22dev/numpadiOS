@@ -10,7 +10,6 @@
 		7948B53F2A91DAF70040756F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 7948B53E2A91DAF70040756F /* CodeScanner */; };
 		79563B072A91C78F00C8A81A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79563B062A91C78F00C8A81A /* Extensions.swift */; };
 		79DC2BAC2A92A4BD00BBB39D /* QRScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC2BAB2A92A4BD00BBB39D /* QRScanningView.swift */; };
-		79DC2BAE2A92A52C00BBB39D /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC2BAD2A92A52C00BBB39D /* SetupView.swift */; };
 		79DC2BB02A92C3F200BBB39D /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC2BAF2A92C3F200BBB39D /* CreditsView.swift */; };
 		F83DFE9A2A8800BE00F9BE82 /* numpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DFE992A8800BE00F9BE82 /* numpadApp.swift */; };
 		F83DFE9C2A8800BE00F9BE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DFE9B2A8800BE00F9BE82 /* ContentView.swift */; };
@@ -22,7 +21,6 @@
 		7948B5402A91DCE80040756F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		79563B062A91C78F00C8A81A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		79DC2BAB2A92A4BD00BBB39D /* QRScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanningView.swift; sourceTree = "<group>"; };
-		79DC2BAD2A92A52C00BBB39D /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		79DC2BAF2A92C3F200BBB39D /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		F83DFE962A8800BE00F9BE82 /* numpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83DFE992A8800BE00F9BE82 /* numpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numpadApp.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				7948B5402A91DCE80040756F /* Info.plist */,
 				F83DFE992A8800BE00F9BE82 /* numpadApp.swift */,
 				79DC2BAB2A92A4BD00BBB39D /* QRScanningView.swift */,
-				79DC2BAD2A92A52C00BBB39D /* SetupView.swift */,
 				F83DFE9B2A8800BE00F9BE82 /* ContentView.swift */,
 				79DC2BAF2A92C3F200BBB39D /* CreditsView.swift */,
 				79563B062A91C78F00C8A81A /* Extensions.swift */,
@@ -163,7 +160,6 @@
 				79563B072A91C78F00C8A81A /* Extensions.swift in Sources */,
 				79DC2BAC2A92A4BD00BBB39D /* QRScanningView.swift in Sources */,
 				79DC2BB02A92C3F200BBB39D /* CreditsView.swift in Sources */,
-				79DC2BAE2A92A52C00BBB39D /* SetupView.swift in Sources */,
 				F83DFE9A2A8800BE00F9BE82 /* numpadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +296,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NumpadiOS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to scan QR codes.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This will allow connecting your phone to your computer.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +331,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = NumpadiOS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to scan QR codes.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "This will allow connecting your phone to your computer.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

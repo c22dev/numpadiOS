@@ -7,8 +7,7 @@
 
 import SwiftUI
 import CodeScanner
-
-var ip: String = ""
+var ip = ""
 struct QRScanningView: View {
     @State var ip2: String = ""
     @Binding var qrScannerSheet: Bool
