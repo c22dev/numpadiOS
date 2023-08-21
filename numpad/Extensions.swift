@@ -102,6 +102,7 @@ struct LinkCell: View {
     var imageName: String
     var url: String
     var title: String
+    var contribution: String
     var systemImage: Bool = false
     var circle: Bool = false
     
@@ -113,16 +114,38 @@ struct LinkCell: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 } else {
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    if imageName != "" {
+                        Image(imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
                 }
             }
-            .frame(width: 30, height: 30)
-            Button(title) {
-                UIApplication.shared.open(URL(string: url)!)
+            .cornerRadius(circle ? .infinity : 0)
+            .frame(width: 24, height: 24)
+            
+            VStack {
+                HStack {
+                    Button(action: {
+                        if url != "" {
+                            UIApplication.shared.open(URL(string: url)!)
+                        }
+                    }) {
+                        Text(title)
+                            .fontWeight(.bold)
+                    }
+                    .padding(.horizontal, 6)
+                    Spacer()
+                }
+                HStack {
+                    Text(contribution)
+                        .padding(.horizontal, 6)
+                        .font(.footnote)
+                    Spacer()
+                }
             }
-            .padding(.horizontal, 4)
         }
+        .foregroundColor(.blue)
     }
 }
+
