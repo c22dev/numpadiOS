@@ -4,3 +4,6 @@ build
 **/package-lock.json
 **/package.json
 **/.vscode
+**/server-linux
+**/server-macos
+**/server-win.exe
