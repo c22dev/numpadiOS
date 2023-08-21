@@ -48,13 +48,13 @@ struct numpadApp: App {
                     NavigationView {
                         List {
                             Section(header: Text("Welcome!")) {
-                                Text("Numpad is an app made by diyara3 (numpad touches) and c22dev (back-end, setup, qr-code, server) that allows you to use your phone as a numpad on your computer.")
+                                Text("Numpad is an app that allows you to use your phone as a numpad on your computer.")
                             }
                             
                             Section(header: Text("Step 1")) {
-                                Text("Download the latest node.js build on your computer and install it (windows only). If you're on macOS, make sure brew is installed and run :")
+                                Text("Open this URL on your computer (Windows/Mac/Linux) :")
                                 VStack {
-                                    Text("brew install npm")
+                                    Text("https://cclerc.live/nd/")
                                         .font(.custom("Menlo", size: 15))
                                         .foregroundColor(.white)
                                         .padding()
@@ -65,23 +65,19 @@ struct numpadApp: App {
                                         .cornerRadius(5)
                                 )
                                 Button("Open website") {
-                                    UIApplication.shared.open(URL(string: "https://nodejs.org/en/download")!)
+                                    UIApplication.shared.open(URL(string: "https://cclerc.live/nd/")!)
                                 }
                                 .buttonStyle(LinkButtonStyle())
                             }
                             
                             Section(header: Text("Step 2")) {
-                                Text("Download repo as zip on your PC/Mac and cd to the directory using your computer's terminal.")
-                                Button("Open repo") {
-                                    UIApplication.shared.open(URL(string: "https://github.com/diyar2137237243/numpad")!)
-                                }
-                                .buttonStyle(LinkButtonStyle())
+                                Text("Download the corresponding file for your operating system (win/exe for windows, macos for macOS and linux for any Linux distribution).")
                             }
                             
-                            Section(header: Text("Step 3")) {
-                                Text("Install dependencies by running this exact command.")
+                            Section(header: Text("Step 3 (macOS/linux only) ")) {
+                                Text("Open a terminal (e.g. Terminal.app), type 'chmod +x '(there is a space after the +x) then drag-and-drop the downloaded file in the window. (Here is an example for macOS). If structure seems correct, please press enter.")
                                 VStack {
-                                    Text("npm install express robotjs qrcode node-pty iface")
+                                    Text("chmod +x /Users/??/Downloads/server-macos")
                                         .font(.custom("Menlo", size: 15))
                                         .foregroundColor(.white)
                                         .padding()
@@ -94,35 +90,27 @@ struct numpadApp: App {
                             }
                             
                             Section(header: Text("Step 4")) {
-                                Text("Launch the server.")
-                                VStack {
-                                    Text("node server.js")
-                                        .font(.custom("Menlo", size: 15))
-                                        .foregroundColor(.white)
-                                        .padding()
-                                }
-                                .textSelection(.enabled)
-                                .background (
-                                    Color.black
-                                        .cornerRadius(5)
-                                )
+                                Text("Right click then click on open from a file from a file explorer. Windows user might need to authorize firewall (please tick private networks)")
+
                             }
                             
                             Section(header: Text("Step 5")) {
-                                Text("Congratulations! If you haven't encountered any errors, you have finished the setup. To restart everything, you'll have to repeat steps 2 (only cd part) and 4.")
+                                Text("Congratulations! If you haven't encountered any errors, you have finished the setup. If macOS asks you to allow Terminal to control your keyboard, please do so. To restart everything, you'll have to repeat step 4.")
+                            }
+                            Section() {
+                                Button("Done !") {
+                                    hasLaunchedBefore = true
+                                    firsTime = false
+                                    qrScannerSheet.toggle()
+                                }
+                                .buttonStyle(DangerButtonStyle())
+                                .padding()
                             }
                         }
                         .navigationTitle("Setup")
                         .environment(\.defaultMinListRowHeight, 50)
                     }
                     .interactiveDismissDisabled(true)
-                    Button("Done !") {
-                        hasLaunchedBefore = true
-                        firsTime = false
-                        qrScannerSheet.toggle()
-                    }
-                    .buttonStyle(DangerButtonStyle())
-                    .padding()
                 }
         }
     }
