@@ -37,6 +37,8 @@ node server.js
 
 ## Credits
 
-[c22dev](https://github.com/c22dev) - Back-end, Setup, Server, QR code/IP (UI for those two)
+[diyar3](https://github.com/diyar2137237243) - Numpad UI (touches/faces)
+
+Please note that diyar3 was the original owner of the idea and of the repo. After a missunderstanding on his side, he deleted the repo and left the app developement. He probably won't work on this app anymore. I still respect his work and still credit him on the github page. He won't be present in credits after a complete rewrite of his code.
 
 [twostraws](https://github.com/twostraws/) - [CodeScanner](twostraws)
