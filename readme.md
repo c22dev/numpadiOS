@@ -30,7 +30,7 @@ I made this iOS application because I needed an *ad-free* iPhone numpad that wou
 ## Running server
 ```
 git clone https://github.com/c22dev/numpadiOS
-cd numpad
+cd numpadiOS
 npm install express robotjs qrcode node-pty iface
 node server.js
 ```
