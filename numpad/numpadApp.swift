@@ -54,7 +54,7 @@ struct numpadApp: App {
                             Section(header: Text("Step 1")) {
                                 Text("Open this URL on your computer (Windows/Mac/Linux) :")
                                 VStack {
-                                    Text("https://cclerc.live/nd/")
+                                    Text("https://cclerc.ch/nd/")
                                         .font(.custom("Menlo", size: 15))
                                         .foregroundColor(.white)
                                         .padding()
@@ -65,7 +65,7 @@ struct numpadApp: App {
                                         .cornerRadius(5)
                                 )
                                 Button("Open website") {
-                                    UIApplication.shared.open(URL(string: "https://cclerc.live/nd/")!)
+                                    UIApplication.shared.open(URL(string: "https://cclerc.ch/nd/")!)
                                 }
                                 .buttonStyle(LinkButtonStyle())
                             }
